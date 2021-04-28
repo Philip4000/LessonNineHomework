@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,9 @@
 		06D01C5926387EA70002EFB5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06D01C5726387EA70002EFB5 /* Main.storyboard */; };
 		06D01C5B26387EA70002EFB5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06D01C5A26387EA70002EFB5 /* Assets.xcassets */; };
 		06D01C5E26387EA70002EFB5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06D01C5C26387EA70002EFB5 /* LaunchScreen.storyboard */; };
+		06D01C7B26389C8E0002EFB5 /* Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06D01C7A26389C8E0002EFB5 /* Animation.swift */; };
+		06D01C822639AEB60002EFB5 /* AnimationData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06D01C812639AEB60002EFB5 /* AnimationData.swift */; };
+		A5307552ABF20421E69F2195 /* Pods_LessonNineHomework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE824E962D8FE43A04283532 /* Pods_LessonNineHomework.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,11 @@
 		06D01C5A26387EA70002EFB5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		06D01C5D26387EA70002EFB5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		06D01C5F26387EA70002EFB5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		06D01C7A26389C8E0002EFB5 /* Animation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animation.swift; sourceTree = "<group>"; };
+		06D01C812639AEB60002EFB5 /* AnimationData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationData.swift; sourceTree = "<group>"; };
+		83E817886A7B16EA7426A86E /* Pods-LessonNineHomework.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LessonNineHomework.release.xcconfig"; path = "Target Support Files/Pods-LessonNineHomework/Pods-LessonNineHomework.release.xcconfig"; sourceTree = "<group>"; };
+		C23908E1C07EF26B74CD2BD4 /* Pods-LessonNineHomework.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LessonNineHomework.debug.xcconfig"; path = "Target Support Files/Pods-LessonNineHomework/Pods-LessonNineHomework.debug.xcconfig"; sourceTree = "<group>"; };
+		FE824E962D8FE43A04283532 /* Pods_LessonNineHomework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LessonNineHomework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5307552ABF20421E69F2195 /* Pods_LessonNineHomework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +51,8 @@
 			children = (
 				06D01C5026387EA70002EFB5 /* LessonNineHomework */,
 				06D01C4F26387EA70002EFB5 /* Products */,
+				EA68CA4C7D01099CEC01A32F /* Pods */,
+				0B045110AE742DA3889A6F1F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +67,82 @@
 		06D01C5026387EA70002EFB5 /* LessonNineHomework */ = {
 			isa = PBXGroup;
 			children = (
-				06D01C5126387EA70002EFB5 /* AppDelegate.swift */,
-				06D01C5326387EA70002EFB5 /* SceneDelegate.swift */,
-				06D01C5526387EA70002EFB5 /* ViewController.swift */,
-				06D01C5726387EA70002EFB5 /* Main.storyboard */,
-				06D01C5A26387EA70002EFB5 /* Assets.xcassets */,
-				06D01C5C26387EA70002EFB5 /* LaunchScreen.storyboard */,
-				06D01C5F26387EA70002EFB5 /* Info.plist */,
+				06D01C802639AE940002EFB5 /* Data Manager */,
+				06D01C7926389C680002EFB5 /* Models */,
+				06D01C6926387ED30002EFB5 /* View Controllers */,
+				06D01C6726387EC30002EFB5 /* Storyboards */,
+				06D01C6C26387F350002EFB5 /* Services */,
+				06D01C6B26387EEF0002EFB5 /* Resources */,
 			);
 			path = LessonNineHomework;
+			sourceTree = "<group>";
+		};
+		06D01C6726387EC30002EFB5 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				06D01C5726387EA70002EFB5 /* Main.storyboard */,
+				06D01C5C26387EA70002EFB5 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		06D01C6926387ED30002EFB5 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				06D01C5526387EA70002EFB5 /* ViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		06D01C6B26387EEF0002EFB5 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				06D01C5A26387EA70002EFB5 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		06D01C6C26387F350002EFB5 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				06D01C5126387EA70002EFB5 /* AppDelegate.swift */,
+				06D01C5326387EA70002EFB5 /* SceneDelegate.swift */,
+				06D01C5F26387EA70002EFB5 /* Info.plist */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		06D01C7926389C680002EFB5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				06D01C7A26389C8E0002EFB5 /* Animation.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		06D01C802639AE940002EFB5 /* Data Manager */ = {
+			isa = PBXGroup;
+			children = (
+				06D01C812639AEB60002EFB5 /* AnimationData.swift */,
+			);
+			path = "Data Manager";
+			sourceTree = "<group>";
+		};
+		0B045110AE742DA3889A6F1F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FE824E962D8FE43A04283532 /* Pods_LessonNineHomework.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EA68CA4C7D01099CEC01A32F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C23908E1C07EF26B74CD2BD4 /* Pods-LessonNineHomework.debug.xcconfig */,
+				83E817886A7B16EA7426A86E /* Pods-LessonNineHomework.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +152,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 06D01C6226387EA70002EFB5 /* Build configuration list for PBXNativeTarget "LessonNineHomework" */;
 			buildPhases = (
+				F334816FFA738CD5DC6C8DA5 /* [CP] Check Pods Manifest.lock */,
 				06D01C4A26387EA60002EFB5 /* Sources */,
 				06D01C4B26387EA60002EFB5 /* Frameworks */,
 				06D01C4C26387EA60002EFB5 /* Resources */,
+				F73E9767CFF9477C3C9DEE3F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,13 +212,57 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		F334816FFA738CD5DC6C8DA5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LessonNineHomework-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F73E9767CFF9477C3C9DEE3F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LessonNineHomework/Pods-LessonNineHomework-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LessonNineHomework/Pods-LessonNineHomework-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LessonNineHomework/Pods-LessonNineHomework-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		06D01C4A26387EA60002EFB5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				06D01C5626387EA70002EFB5 /* ViewController.swift in Sources */,
+				06D01C822639AEB60002EFB5 /* AnimationData.swift in Sources */,
 				06D01C5226387EA70002EFB5 /* AppDelegate.swift in Sources */,
+				06D01C7B26389C8E0002EFB5 /* Animation.swift in Sources */,
 				06D01C5426387EA70002EFB5 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -283,39 +407,43 @@
 		};
 		06D01C6326387EA70002EFB5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C23908E1C07EF26B74CD2BD4 /* Pods-LessonNineHomework.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7W36S89AXJ;
-				INFOPLIST_FILE = LessonNineHomework/Info.plist;
+				INFOPLIST_FILE = LessonNineHomework/Services/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = philipnoskov.LessonNineHomework;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		06D01C6426387EA70002EFB5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 83E817886A7B16EA7426A86E /* Pods-LessonNineHomework.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7W36S89AXJ;
-				INFOPLIST_FILE = LessonNineHomework/Info.plist;
+				INFOPLIST_FILE = LessonNineHomework/Services/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = philipnoskov.LessonNineHomework;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
